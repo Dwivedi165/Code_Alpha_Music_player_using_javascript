@@ -1,0 +1,85 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.player {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  overflow: hidden;
+  width: 350px;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s;
+}
+
+.player:hover {
+  transform: scale(1.05);
+}
+
+.music-info {
+  padding: 10px;
+}
+
+.music-info h4 {
+  margin: 0;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.music-info .artist {
+  color: #666;
+  font-size: 1em;
+}
+
+.album-art img {
+  width: 100%;
+  border-radius: 20px;
+  margin: 10px 0;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+
+.control-btn {
+  background: #9b59b6;
+  border: none;
+  color: #fff;
+  font-size: 1.5em;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 10px;
+  outline: none;
+  transition: background 0.3s;
+}
+
+.control-btn:hover {
+  background: #8e44ad;
+}
+
+.progress-container {
+  background: #ddd;
+  height: 5px;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.progress {
+  background: #9b59b6;
+  height: 100%;
+  width: 0%;
+  border-radius: 5px;
+  transition: width 0.1s ease;
+}
